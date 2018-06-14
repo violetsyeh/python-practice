@@ -16,12 +16,10 @@ def pig_latin(phrase):
     for word in split_phrase:
     	if word[0] in vowels:
     		new_word = word + 'yay'
-    		# print new_word
     		new_word_list.append(new_word)
     		
     	else:
     		new_word = word[1::] + word[0] + 'ay'
-    		# print new_word
     		new_word_list.append(new_word)
     return ' '.join(new_word_list)
 
