@@ -1,24 +1,29 @@
-"""list of integers, some even some odd
-write a function that returns indexes of all the integers that are even
+"""Given list of ints, return list of *indices* of even numbers in list.
 
-i : [1,2,3,4,6,8]
-o : [1, 3, 4, 5]
+For example::
 
+    >>> show_evens([])
+    []
 
+    >>> show_evens([2])
+    [0]
 
- def function(lst):
+    >>> show_evens([1, 2, 3, 4])
+    [1, 3]
 
 """
 
-def show_even_nums(list):
-	even_list = []
-	for i in range(len(list)):
-		if list[i] % 2 == 0:
-			even_list.append(i)
-	return even_list
 
-print show_even_nums([1,2,3,4,6,8])
+def show_evens(nums):
+    """Given list of ints, return list of *indices* of even numbers in list."""
 
-print show_even_nums([1,2,3,4,6,8,8,6])
+    even_list = []
+    for i in range(len(nums)):
+        if nums[i] % 2 == 0:
+            even_list.append(i)
+    return even_list
 
-print show_even_nums([])
+if __name__ == '__main__':
+    import doctest
+    if doctest.testmod().failed == 0:
+        print "\n*** ALL TESTS PASSED. EVENLY HANDLED!\n"
