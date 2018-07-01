@@ -58,9 +58,9 @@ def has_balanced_brackets(phrase):
     brack_list = []
 
     for char in phrase:
-      if char in brack_dict.values():
+      if char in set(brack_dict.values()):
         brack_list.append(char)
-      elif char in brack_dict.keys(): 
+      elif char in set(brack_dict.keys()): 
         if brack_list == []:
           return False
         elif brack_list[-1] == brack_dict[char]:
