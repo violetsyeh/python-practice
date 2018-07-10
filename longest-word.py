@@ -14,7 +14,7 @@ For example::
 def find_longest_word(words):
     """Return longest word in list of words."""
 
-    max_word = 0
+    max_word = len(words[0])
 
     for word in words:
     	if len(word) > max_word:
