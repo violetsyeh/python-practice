@@ -65,8 +65,6 @@ def has_balanced_brackets(phrase):
           return False
         elif brack_list[-1] == brack_dict[char]:
           brack_list.pop()
-        else:
-          return False
     return brack_list == []
 
 
