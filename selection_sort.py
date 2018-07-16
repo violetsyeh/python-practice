@@ -14,15 +14,13 @@
 def selection_sort(array):
 	"""Using selection sort, return the sorted array"""
 
-	for i in range(len(array)-1, 0, -1):
-		max_value = 0
-		for j in range(1, i + 1):
-			if array[j] > array[max_value]:
-				max_value = j
-		if i != max_value:
-			temp = array[i]
-			array[i] = array[max_value]
-			array[max_value] = temp
+	for i in range(0,len(array) -1):
+		min_value = i
+		for j in range(i + 1, len(array)):
+			if array[j] < array[min_value]:
+				min_value = j
+		if min_value != i:
+			array[i], array[min_value] = array[min_value], array[i]
 
 	return array
 
