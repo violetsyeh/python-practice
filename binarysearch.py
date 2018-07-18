@@ -35,7 +35,7 @@ def binary_search(val):
 
     while guess != val:
         num_guesses += 1
-        guess = (lower_bound - higher_bound) // 2 + higher_bound
+        guess = (higher_bound + lower_bound) // 2
 
         if val > guess:
             lower_bound = guess
