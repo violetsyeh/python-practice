@@ -4,6 +4,12 @@ Write a function that returns the lonely integer.
 >>> find_lonely_num([2, 6, 3, 8, 3, 2, 6])
 8
 
+>>> find_lonely_num([-1, -1, -1, -2, -3, -3, -4, -4])
+-2
+
+>>> find_lonely_num([5, 5, 33, 6, 8, 6, 8])
+33
+
 """
 
 def find_lonely_num(nums):
