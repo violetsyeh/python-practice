@@ -15,6 +15,7 @@
 """
 
 def fib_recursive(n):
+"""Use recursion to solve Fibonacci"""
 
 	if n <= 1:
 		return n
