@@ -8,6 +8,8 @@
 """
 
 def count(n=1):
+	"""Use recursion to print 1 - 3"""
+
 	if n > 3:
 		return
 	print n
