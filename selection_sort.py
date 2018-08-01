@@ -14,7 +14,7 @@
 def selection_sort(array):
 	"""Using selection sort, return the sorted array"""
 
-	for i in range(0,len(array) -1):
+	for i in range(0,len(array) - 1):
 		min_value = i
 		for j in range(i + 1, len(array)):
 			if array[j] < array[min_value]:
